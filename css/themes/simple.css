@@ -1,0 +1,57 @@
+/*
+ * Copyright (c) 2012, Intel Corporation. All rights reserved.
+ * File revision: 04 October 2012
+ * Please see http://software.intel.com/html5/license/samples 
+ * and the included README.md file for license terms and conditions.
+ */
+
+html, body, #calc {
+   font-family: 'Lucida Console', 'Ubuntu', sans-serif;
+}
+
+
+#calc {
+  background-color: rgba(180,180,255,1);
+  font-size: 250%;
+}
+
+.display {
+  background-color: lightyellow;
+}
+
+.pad {
+  background-color: rgba(180,180,255,1);
+}
+
+.row {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+}
+
+.row:hover {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+}
+
+.button {
+  background-color: rgba(180,180,255,1);
+  border: 1px solid black;
+  border-radius: 10px;
+
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  margin: 2px;
+}
+
+.button:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  background-color: pink;
+}

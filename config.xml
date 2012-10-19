@@ -1,0 +1,1 @@
+<preference name="orientation" value="portrait" />
