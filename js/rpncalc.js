@@ -50,7 +50,7 @@ function make_layouts(pad, display, stack)
       {text:"<sup>1</sup>&frasl;<sub>x</sub>", fcn: pad.nvrs},
       {text:FN, fcn: pad.toggleLayout} ],
 
-    [ {text:"x&harr;y", fcn: pad.xchng},
+    [ {text:"<span style='font-size:90%'>x&harr;y</span>", fcn: pad.xchng},
       new NumButton("7"),
       new NumButton("8"),
       new NumButton("9"),
@@ -62,11 +62,12 @@ function make_layouts(pad, display, stack)
       new NumButton("6"),
       new BinopButton("&ndash;", "-") ],
 
-    [ {text:"C<span style='font-size: 85%'>lear</span>", fcn: display.clear},
+    [ {text:"C<span style='font-size: 85%'>lr</span>", fcn: display.clear},
       new NumButton("1"),
       new NumButton("2"),
       new NumButton("3"),
-      new BinopButton("&times", "*") ],
+      new BinopButton("*", "*") ],
+      // Unfortunately Android doesn't seem to know &times; or &#215;
 
     [ {text:"<span style='font-size:110%'>&crarr;<span>", fcn: pad.enterButton},
       new NumButton("0"),
@@ -76,22 +77,22 @@ function make_layouts(pad, display, stack)
   ];
 
   Fnlayout = [
-    [ {text:"Theme", fcn: pad.toggleTheme},
+    [ {text:"<span style='font-size:70%'>Theme</span>", fcn: pad.toggleTheme},
       {text:ROLLUP, fcn:function () {stack.rollup(display)}},
       {text:ROLLDN, fcn:function () {stack.rolldown(display)}},
       {text:FN, fcn: pad.toggleLayout} ],
     [ {text:"ln", fcn:function () { pad.unaryOp(Math.log)}},
       {text:"e", fcn:function () {pad.pushConst(Math.E)}},
       {text:"&pi;", fcn:function () {pad.pushConst(Math.PI)}},
-      {text:"round", fcn:function () { pad.unaryOp(Math.round)}} ],
+      {text:"<span style='font-size:80%'>round</span>", fcn:function () { pad.unaryOp(Math.round)}} ],
     [ {text:"sin", fcn:function () { pad.unaryOp(Math.sin)}},
       {text:"cos", fcn:function () { pad.unaryOp(Math.cos)}},
       {text:"tan", fcn:function () { pad.unaryOp(Math.tan)}},
-      {text:"floor", fcn:function () { pad.unaryOp(Math.floor)}} ],
-    [ {text:"sin<sup>-1</sup>", fcn:function () { pad.unaryOp(Math.asin)}},
-      {text:"cos<sup>-1</sup>", fcn:function () { pad.unaryOp(Math.acos)}},
-      {text:"tan<sup>-1</sup>", fcn:function () { pad.unaryOp(Math.atan)}},
-      {text:"ceil", fcn:function () { pad.unaryOp(Math.ceil)}} ]
+      {text:"<span style='font-size:90%'>floor", fcn:function () { pad.unaryOp(Math.floor)}} ],
+    [ {text:"<span style='font-size:90%'>sin<sup>-1</sup></span>", fcn:function () { pad.unaryOp(Math.asin)}},
+      {text:"<span style='font-size:90%'>cos<sup>-1</sup></span>", fcn:function () { pad.unaryOp(Math.acos)}},
+      {text:"<span style='font-size:90%'>tan<sup>-1</sup></span>", fcn:function () { pad.unaryOp(Math.atan)}},
+      {text:"<span style='font-size:90%'>ceil</span>", fcn:function () { pad.unaryOp(Math.ceil)}} ]
   ];
 
   return [layout, Fnlayout];
