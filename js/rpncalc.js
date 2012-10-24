@@ -77,22 +77,22 @@ function make_layouts(pad, display, stack)
   ];
 
   Fnlayout = [
-    [ {text:"<span style='font-size:70%'>Theme</span>", fcn: pad.toggleTheme},
+    [ {text:"<span style='font-size:50%'>Theme</span>", fcn: pad.toggleTheme},
       {text:ROLLUP, fcn:function () {stack.rollup(display)}},
       {text:ROLLDN, fcn:function () {stack.rolldown(display)}},
       {text:FN, fcn: pad.toggleLayout} ],
     [ {text:"ln", fcn:function () { pad.unaryOp(Math.log)}},
       {text:"e", fcn:function () {pad.pushConst(Math.E)}},
       {text:"&pi;", fcn:function () {pad.pushConst(Math.PI)}},
-      {text:"<span style='font-size:80%'>round</span>", fcn:function () { pad.unaryOp(Math.round)}} ],
+      {text:"<span style='font-size:60%'>round</span>", fcn:function () { pad.unaryOp(Math.round)}} ],
     [ {text:"sin", fcn:function () { pad.unaryOp(Math.sin)}},
       {text:"cos", fcn:function () { pad.unaryOp(Math.cos)}},
       {text:"tan", fcn:function () { pad.unaryOp(Math.tan)}},
-      {text:"<span style='font-size:90%'>floor", fcn:function () { pad.unaryOp(Math.floor)}} ],
-    [ {text:"<span style='font-size:90%'>sin<sup>-1</sup></span>", fcn:function () { pad.unaryOp(Math.asin)}},
-      {text:"<span style='font-size:90%'>cos<sup>-1</sup></span>", fcn:function () { pad.unaryOp(Math.acos)}},
-      {text:"<span style='font-size:90%'>tan<sup>-1</sup></span>", fcn:function () { pad.unaryOp(Math.atan)}},
-      {text:"<span style='font-size:90%'>ceil</span>", fcn:function () { pad.unaryOp(Math.ceil)}} ]
+      {text:"<span style='font-size:60%'>floor", fcn:function () { pad.unaryOp(Math.floor)}} ],
+    [ {text:"<span style='font-size:80%'>sin<sup>-1</sup></span>", fcn:function () { pad.unaryOp(Math.asin)}},
+      {text:"<span style='font-size:80%'>cos<sup>-1</sup></span>", fcn:function () { pad.unaryOp(Math.acos)}},
+      {text:"<span style='font-size:80%'>tan<sup>-1</sup></span>", fcn:function () { pad.unaryOp(Math.atan)}},
+      {text:"<span style='font-size:60%'>ceil</span>", fcn:function () { pad.unaryOp(Math.ceil)}} ]
   ];
 
   return [layout, Fnlayout];
