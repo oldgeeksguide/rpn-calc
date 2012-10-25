@@ -38,13 +38,13 @@ function BinopButton(o, plain) {
 function make_layouts(pad, display, stack)
 {
   //Button Layouts
-  // Stupid Chrome doesn't support mathml
+  // Chrome (webkit) doesn't support mathml
   //  [ {text:"<math><msqrt><mi>x</mi></msqrt></math>", fcn: function () { pad.unaryOp(Math.sqrt)}},
   //  [ {text:"sqrt", fcn: function () { pad.unaryOp(Math.sqrt)}},
   //  [ {text:"&radic;<span style='text-decoration:overline;'>x</span>", fcn: function () { pad.unaryOp(Math.sqrt)}},
   //  [ {text:"&radic;<span style='margin-left:-0.08em; font-size:80%; border-top:0.25ex solid;'>x</span>", fcn: function () { pad.unaryOp(Math.sqrt)}},
   layout = [
-    [ {text:"<span style='font-size:115%;'>&radic;</span><span style='margin-left:-0.075em; border-top:0.25ex solid;'>x</span>", fcn: function () { pad.unaryOp(Math.sqrt)}},
+    [ {text:"<span style='font-size:139%;'>&radic;</span><span style='margin-left:-0.075em; border-top:0.25ex solid;'>x</span>", fcn: function () { pad.unaryOp(Math.sqrt)}},
       {text:"y<sup>x</sup>", fcn: pad.xpnt},
       {text:"|x|", fcn: function () { pad.unaryOp(Math.abs)}},
       {text:"<sup>1</sup>&frasl;<sub>x</sub>", fcn: pad.nvrs},

@@ -5,6 +5,30 @@
  * and the included README.md file for license terms and conditions.
  */
 
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  /* src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff'); */
+  src: local('Ubuntu'), url(fonts/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Shanti';
+  font-style: normal;
+  font-weight: 400;
+  /* src: local('Shanti'), url(http://themes.googleusercontent.com/static/fonts/shanti/v4/eGeZy9lK-sD_x4kdQnR1SOvvDin1pK8aKteLpeZ5c0A.woff) format('woff'); */
+  src: local('Shanti'), url(fonts/eGeZy9lK-sD_x4kdQnR1SOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  /* src: local('Orbitron-Light'), local('Orbitron-Regular'), url(http://themes.googleusercontent.com/static/fonts/orbitron/v3/94ug0rEgQO_WuI_xKJMFc3YhjbSpvc47ee6xR_80Hnw.woff) format('woff'); */
+  src: local('Orbitron-Light'), local('Orbitron-Regular'), url(fonts/94ug0rEgQO_WuI_xKJMFc3YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
+
 html, body, #calc {
 
    width: 100%;
