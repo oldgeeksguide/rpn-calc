@@ -1,0 +1,47 @@
+/*
+ * Copyright (c) 2012, Intel Corporation. All rights reserved.
+ * File revision: 04 October 2012
+ * Please see http://software.intel.com/html5/license/samples 
+ * and the included README.md file for license terms and conditions.
+ */
+
+html, body, #calc {
+   font-family: 'Shanti', sans-serif;
+}
+
+#calc {
+  background-color: rgba(100,100,255,1);
+  font-size: 250%;
+}
+
+.display {
+  background-color: lightyellow;
+}
+
+.pad {
+  background-color: rgba(100,100,255,1);
+  background-color: rgba(180,180,255,1);
+  /* background-image: -moz-linear-gradient(center, ellipse cover,  rgba(240,240,255,1) 0%, rgba(100,100,255,1) 60%, rgba(100,100,255,1) 100%); */
+  background-image: -webkit-gradient(linear, left top, left bottom,  from(rgba(80,80,255,1)), to(rgba(200,200,255,1)));
+  background-image: linear-gradient(to bottom,  rgba(80,80,255,1), rgba(200,200,255,1));
+}
+
+.row {
+  /* For some reason, if min-height*numrows + disp % > 100, then
+  ** it tends to fall off the bottom when expanded (hovering)
+  ** keeping this low seems to work on FF and Chrome.
+  ** Not having it all makes FF rows too small.
+  */
+  min-height: 10%;
+}
+
+.button {
+  /* background-color: rgba(100,100,255,1); */
+  /* background-image: url('button-gradient.svg'); */
+  background-image: url('shinyredbutton.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+}
+
