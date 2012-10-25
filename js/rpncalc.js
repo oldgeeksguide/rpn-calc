@@ -10,11 +10,8 @@ var CLEAR = "0.00";
 var ZERODOT = "0.";
 var STACKSIZE = 3;
 
-function notYet() {
-  alert("Ooops, not done with that yet, sorry.");
-}
-
-// Button Strings
+// Button Strings - for clarity, some functions are
+// associated with const global vars
 // y is top of stack, x is currently displayed number
 var FN   = "Fn";   // Fn button
 var ROLLUP = "R&uarr;"    // Roll through stack up
@@ -44,7 +41,7 @@ function make_layouts(pad, display, stack)
   //  [ {text:"&radic;<span style='text-decoration:overline;'>x</span>", fcn: function () { pad.unaryOp(Math.sqrt)}},
   //  [ {text:"&radic;<span style='margin-left:-0.08em; font-size:80%; border-top:0.25ex solid;'>x</span>", fcn: function () { pad.unaryOp(Math.sqrt)}},
   layout = [
-    [ {text:"<span style='font-size:139%;'>&radic;</span><span style='margin-left:-0.075em; border-top:0.25ex solid;'>x</span>", fcn: function () { pad.unaryOp(Math.sqrt)}},
+    [ {text:"<span style='font-size:138%;'>&radic;</span><span style='margin-left:-0.075em; border-top:0.25ex solid;'>x</span>", fcn: function () { pad.unaryOp(Math.sqrt)}},
       {text:"y<sup>x</sup>", fcn: pad.xpnt},
       {text:"|x|", fcn: function () { pad.unaryOp(Math.abs)}},
       {text:"<sup>1</sup>&frasl;<sub>x</sub>", fcn: pad.nvrs},
