@@ -38,9 +38,13 @@ html, body, #calc {
 .button {
   /* background-color: rgba(100,100,255,1); */
   /* background-image: url('button-gradient.svg'); */
-  background-image: url('shinyredbutton.svg');
+  /* background-image: url('shinyredbutton.svg'); */
+  /* Nook had trouble with svg, trying png instead */
+  background-image: url('shinyredbutton.png');
   background-repeat: no-repeat;
   background-position: center;
+  /* Had to add size to go with png file so it comes out right */
+  background-size:100% auto;
 
   border: none;
 }
